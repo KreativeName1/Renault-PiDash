@@ -1,0 +1,23 @@
+ KiCad local Git-based history
+.history
+
+# KiCad backups
+**/*-backups/*.zip
+
+# KiCad local project settings
+*.kicad_prl
+
+# KiCad temporary/backup files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*~
+~*
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+~*.lck

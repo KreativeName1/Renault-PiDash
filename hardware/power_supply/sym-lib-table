@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "LM70840QRRXRQ1") (type "KiCad") (uri "C:/Users/Sascha/Documents/schematic/LM70840QRRXRQ1_clean.kicad_sym") (options "") (descr ""))
+	(lib (name "LMR38025SQDRRRQ1") (type "KiCad") (uri "E:/Downloads/LMR38025SQDRRRQ1.kicad_sym") (options "") (descr ""))
+)
