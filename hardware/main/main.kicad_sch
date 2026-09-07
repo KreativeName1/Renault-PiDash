@@ -1,0 +1,434 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5")
+	(paper "A4")
+	(title_block
+		(title "Renault-PiDash - Main PCB")
+	)
+	(lib_symbols)
+	(text "Renault-PiDash - Main PCB"
+		(exclude_from_sim no)
+		(at 50.8 50.8 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "10963710-93fe-430a-aec3-5017c9272448")
+	)
+	(sheet
+		(at 165.1 76.2)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "1365427d-9f63-40aa-86c4-95bccf98c7c3")
+		(property "Sheetname" "MPU"
+			(at 165.1 75.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mpu/mpu.kicad_sch"
+			(at 165.1 115.0116 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3V3_RAIL" input
+			(at 165.1 88.9 180)
+			(uuid "c5156227-19c4-44e9-be5e-0984ae40ba20")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL" bidirectional
+			(at 165.1 92.71 180)
+			(uuid "2a1ed21c-388c-4820-b63f-d1fd26222c60")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 165.1 97.79 180)
+			(uuid "7459a320-5ace-4376-8b03-b653c743c631")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "main"
+				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 68.58 140.97)
+		(size 57.15 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "221f3800-8650-4224-b18d-cd5962c43f41")
+		(property "Sheetname" "Pi Zero Circuit"
+			(at 68.58 140.2584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pi/pi_zero.kicad_sch"
+			(at 68.58 174.5746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "5V_RAIL" input
+			(at 68.58 148.59 180)
+			(uuid "93701e0f-d671-47e2-9692-654d63a2bdcf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADS_ALERT" input
+			(at 68.58 154.94 180)
+			(uuid "6c198f01-6836-4f33-af9c-7b9f80fe2c01")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AUDIO_PWM" output
+			(at 68.58 160.02 180)
+			(uuid "a018a187-ead3-4270-a1a0-327eb20104b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CAN_CS" output
+			(at 125.73 147.32 0)
+			(uuid "2c9d46de-6b43-4bb6-95ee-40630cefa293")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_INTERRUPT" input
+			(at 125.73 152.4 0)
+			(uuid "043c066b-395b-4717-adae-4dcaf3a3ae5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_MISO" input
+			(at 125.73 156.21 0)
+			(uuid "4e669ef3-87cc-44f5-bb2c-eb20ae26216b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_MOSI" output
+			(at 125.73 160.02 0)
+			(uuid "460c3d5d-6b41-4946-8138-31da94b89b4c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CAN_SCLK" output
+			(at 125.73 162.56 0)
+			(uuid "7a0d8f1b-9c86-4ecb-8fda-c3ff18230d63")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP1_CS" output
+			(at 125.73 166.37 0)
+			(uuid "0ea5ef03-5196-4a03-9e9f-202944923554")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP2_CS" output
+			(at 99.06 140.97 90)
+			(uuid "305708b5-fc04-41ba-885f-3099468f51ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP3_CS" output
+			(at 102.87 140.97 90)
+			(uuid "1290c558-188f-45f4-9161-b886e9e18a7a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP_MISO" input
+			(at 105.41 140.97 90)
+			(uuid "5675e008-816b-4e62-9bc1-13b9657da2f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP_MOSI" output
+			(at 107.95 140.97 90)
+			(uuid "07ecf85d-0213-4a19-a5c0-b591da4716e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ESP_SCLK" output
+			(at 96.52 140.97 90)
+			(uuid "8675ebe0-001b-479b-a25f-5bf6c7916ca6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPS_RX" input
+			(at 92.71 140.97 90)
+			(uuid "6a4d2d52-b917-4413-bdeb-f793977bee54")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPS_TX" output
+			(at 88.9 140.97 90)
+			(uuid "426c6037-3675-42d8-8d28-ad9cf9332897")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IO_INT" input
+			(at 86.36 140.97 90)
+			(uuid "fb865083-c8d0-4ab8-9b15-2e00dbde43da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PI_OFF_REQUEST" input
+			(at 88.9 173.99 270)
+			(uuid "dd227e67-6ffd-4919-9607-62974f4c1fdb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PI_OFF_SIGNAL" output
+			(at 95.25 173.99 270)
+			(uuid "d79cdff3-6c2f-4f99-91c6-8d8008c24b2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL" bidirectional
+			(at 101.6 173.99 270)
+			(uuid "54e690e6-57f5-4c99-830c-44c858bd091f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 104.14 173.99 270)
+			(uuid "4f9befba-a5bc-458b-beae-e3c3cd7d06e3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "main"
+				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 76.2)
+		(size 63.5 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b60627e7-4f8f-4feb-bf39-03b594544918")
+		(property "Sheetname" "PSU"
+			(at 50.8 75.4884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "psu/power_supply.kicad_sch"
+			(at 50.8 115.0116 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "3V3_RAIL" output
+			(at 114.3 87.63 0)
+			(uuid "d6456eb1-9576-4490-aa2a-c040b5470ff0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "5V_RAIL" output
+			(at 114.3 100.33 0)
+			(uuid "7b7f2ef4-ab05-441d-a6ac-627cfbb68ece")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BAT" output
+			(at 114.3 92.71 0)
+			(uuid "d4c65ab2-8378-4ba8-a9ae-c5ee625c5c86")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "main"
+				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
