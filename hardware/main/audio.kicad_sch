@@ -1,0 +1,29 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "3a86a06b-d300-437e-8864-cc6f0f18eb3a")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 72.39 93.98) (xy 81.28 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0fe770d-f075-45c5-bf36-426272e5a094")
+	)
+	(hierarchical_label "AUDIO_PWM"
+		(shape input)
+		(at 72.39 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "acfd1d24-9a7d-4ac7-9fb2-2d18ad919c29")
+	)
+)

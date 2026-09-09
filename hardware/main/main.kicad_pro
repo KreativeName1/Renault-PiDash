@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [],
@@ -599,7 +615,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
-      "hop_over_size_choice": 2,
+      "hop_over_size_choice": 3,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -632,7 +648,7 @@
         "uuid": "3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U15,#PWR79-80,J7-8",
     "variants": []
   },
   "sheets": [
@@ -671,6 +687,22 @@
     [
       "221f3800-8650-4224-b18d-cd5962c43f41",
       "Pi Zero Circuit"
+    ],
+    [
+      "9ae84d67-064b-4531-bc2c-ef16eda37330",
+      "CAM"
+    ],
+    [
+      "ee36f53e-7e46-42e8-9379-443494bbfe13",
+      "Sensors"
+    ],
+    [
+      "c6de7e74-73b0-4e19-b119-aff34941e62e",
+      "IO expansion"
+    ],
+    [
+      "59d6a27d-07c2-4a94-9a5b-1245c7748bf1",
+      "Main Connector"
     ]
   ],
   "text_variables": {},

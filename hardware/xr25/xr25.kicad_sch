@@ -953,7 +953,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "can_transcieverkicad_sch.kicad_sch"
+		(property "Sheetfile" "can_transciever.kicad_sch"
 			(at 177.8 116.1546 0)
 			(show_name no)
 			(do_not_autoplace no)

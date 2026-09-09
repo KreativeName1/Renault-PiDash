@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "GY_GPS6MV2") (type "KiCad") (uri "${KIPRJMOD}/lib/GY_GPS6MV2.pretty") (options "") (descr ""))
+)

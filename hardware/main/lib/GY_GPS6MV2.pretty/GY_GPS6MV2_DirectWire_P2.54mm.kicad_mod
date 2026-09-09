@@ -1,0 +1,227 @@
+(footprint "GY_GPS6MV2_DirectWire_P2.54mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "GY-GPS6MV2 breakout on four short wire links; 26x36mm body, row 1.5mm from edge; SQUARE PAD 4 GND; VERIFY CLONE")
+	(tags "GPS NEO6M GY-GPS6MV2 direct solder wire 2.54mm")
+	(property "Reference" "REF**"
+		(at 3.81 -5 0)
+		(layer "F.SilkS")
+		(uuid "40054cbc-8350-47b7-83cf-f45e7fd602bd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "GY_GPS6MV2_DirectWire_P2.54mm"
+		(at 3.81 37 0)
+		(layer "F.Fab")
+		(uuid "cc2dae4b-d9e7-470b-813f-1d4f03c2a1bb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b7a11bcb-7c7e-4cd6-9520-fd8f19dfbae5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "47b85a4f-981f-4e45-9b03-d9bd7f9a4849")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 9.12 0)
+		(end 9.72 0.6)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a8b231dd-c30b-4168-afa8-7ace201135fe")
+	)
+	(fp_line
+		(start 9.72 -0.6)
+		(end 9.12 0)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "348e38a5-75e6-4cb5-a620-784712c5e011")
+	)
+	(fp_line
+		(start 9.72 0.6)
+		(end 9.72 -0.6)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a395302c-df4c-4680-99b9-31db2b9fbceb")
+	)
+	(fp_rect
+		(start -9.34 -1.65)
+		(end 16.96 34.65)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "18b17008-b36a-402f-b471-ffa51685c654")
+	)
+	(fp_rect
+		(start -10.19 -2.5)
+		(end 17.81 35.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "bb128dc0-cb5c-4e09-9bd9-515293677632")
+	)
+	(fp_rect
+		(start -9.19 -1.5)
+		(end 16.81 34.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b8437e21-8950-442d-b5dc-69236990dc22")
+	)
+	(fp_text user "1:VCC"
+		(at 0 2.1 90)
+		(layer "F.SilkS")
+		(uuid "b30c0726-611b-4d1c-ba13-eb7ea2284d23")
+		(effects
+			(font
+				(size 0.65 0.65)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "2:RX"
+		(at 2.54 2.1 90)
+		(layer "F.SilkS")
+		(uuid "5990eca0-234b-4107-98af-176a2a645241")
+		(effects
+			(font
+				(size 0.65 0.65)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "3:TX"
+		(at 5.08 2.1 90)
+		(layer "F.SilkS")
+		(uuid "6ac2ca3d-9e3c-4aea-ac5c-d222126677c3")
+		(effects
+			(font
+				(size 0.65 0.65)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "4:GND"
+		(at 7.62 2.1 90)
+		(layer "F.SilkS")
+		(uuid "c02b467c-e639-4ec5-a148-14ac76ebeb61")
+		(effects
+			(font
+				(size 0.65 0.65)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "GPS Module"
+		(at 3.81 15 0)
+		(layer "Dwgs.User")
+		(uuid "b091e93b-0ea1-4a89-84c0-437435f11595")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "26 x 36 mm"
+		(at 3.81 17 0)
+		(layer "Dwgs.User")
+		(uuid "3eb10b6b-98af-4a0e-8a53-1197e1050636")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 3.81 10 0)
+		(layer "F.Fab")
+		(uuid "70aee3e3-d1b6-4467-825b-ba6b68bb4ea8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a2de2d4d-6ebc-43d2-8df0-2b315817d3ef")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "56039a8f-35bb-4ffc-913e-9429812db2f4")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ffa2993b-e684-4a37-bc8b-d866b2a3030b")
+	)
+	(pad "4" thru_hole rect
+		(at 7.62 0)
+		(size 2 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "31c951ba-9870-409f-905e-0f285e27274d")
+	)
+	(embedded_fonts no)
+)
