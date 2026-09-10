@@ -2297,8 +2297,56 @@
 		(uuid "ffad4390-5672-4a72-a4fc-bae432723105")
 	)
 	(no_connect
+		(at 137.16 87.63)
+		(uuid "0b6a2162-d761-4fda-8a4e-540de1c9ae50")
+	)
+	(no_connect
+		(at 137.16 85.09)
+		(uuid "162510a6-cab8-493a-8fdb-6cc60507164c")
+	)
+	(no_connect
+		(at 137.16 97.79)
+		(uuid "16ae4280-183a-4a3d-9666-4ec3eaef1cea")
+	)
+	(no_connect
 		(at 196.85 107.95)
 		(uuid "39e569fd-e4e5-4639-a566-eb978d0285ec")
+	)
+	(no_connect
+		(at 137.16 105.41)
+		(uuid "4dd7c645-d815-4745-bf99-3bc2be39552e")
+	)
+	(no_connect
+		(at 137.16 100.33)
+		(uuid "a3e2ef64-3595-4156-8cab-43ce446cf0b8")
+	)
+	(no_connect
+		(at 137.16 77.47)
+		(uuid "ba6b3921-ad44-4fc7-90d9-b4d8eebd4bba")
+	)
+	(no_connect
+		(at 137.16 102.87)
+		(uuid "bb1679fa-a514-4dc3-a1a9-574e690de37b")
+	)
+	(no_connect
+		(at 106.68 100.33)
+		(uuid "beac4499-8231-491a-b788-1243c399fe91")
+	)
+	(no_connect
+		(at 137.16 82.55)
+		(uuid "d87fb634-6f2b-4698-a7bc-17d4006a02c2")
+	)
+	(no_connect
+		(at 137.16 72.39)
+		(uuid "e1b9a314-9902-43e1-a301-a2ef3f008ddf")
+	)
+	(no_connect
+		(at 137.16 80.01)
+		(uuid "e20bcbd3-1de2-4d0a-a2e6-ed709e8ccd72")
+	)
+	(no_connect
+		(at 137.16 74.93)
+		(uuid "f9f955be-da99-45a9-89f4-9d53c3530327")
 	)
 	(wire
 		(pts
@@ -3340,16 +3388,6 @@
 		)
 		(uuid "09115a62-f40d-42ad-b1bb-9c999217de76")
 	)
-	(label "To Pi GPIO with 10k pull-up to pi 3V3"
-		(at 59.69 157.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "68cd715d-bd36-4000-a269-5ac8d68e8796")
-	)
 	(label "PSU_ON"
 		(at 149.86 118.11 0)
 		(effects
@@ -3359,16 +3397,6 @@
 			(justify left bottom)
 		)
 		(uuid "f71c88cb-ccd5-4e6c-8f3b-5b12c04853b4")
-	)
-	(label "Set LOW to power off"
-		(at 139.7 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fd22e49f-4395-4dae-b423-2ca64f6688dc")
 	)
 	(hierarchical_label "5V_ENABLE"
 		(shape output)

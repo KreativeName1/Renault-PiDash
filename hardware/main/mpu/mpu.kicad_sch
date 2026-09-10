@@ -1125,6 +1125,12 @@
 		(uuid "5ca37594-931d-49ba-8fdc-8d6cd7d98754")
 	)
 	(junction
+		(at 134.62 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "815d5fcf-e24a-4a68-96a7-0fe3eb312687")
+	)
+	(junction
 		(at 106.68 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1268,7 +1274,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 63.5) (xy 134.62 66.04)
+			(xy 134.62 63.5) (xy 134.62 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1388,6 +1394,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 69.85) (xy 134.62 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7140359a-aca0-4394-9c6a-4d430a1b514f")
+	)
+	(wire
+		(pts
 			(xy 149.86 96.52) (xy 156.21 96.52)
 		)
 		(stroke
@@ -1498,13 +1514,13 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 71.12) (xy 134.62 73.66)
+			(xy 142.24 69.85) (xy 144.78 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bd9db5af-f307-4215-84f3-e2656c7efff0")
+		(uuid "bdd31bad-dd64-4d98-8d04-7f7253520534")
 	)
 	(wire
 		(pts
@@ -1618,6 +1634,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 69.85) (xy 137.16 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff67baa0-2f98-486c-8acd-2ae97db2290a")
+	)
+	(wire
+		(pts
 			(xy 134.62 62.23) (xy 134.62 63.5)
 		)
 		(stroke
@@ -1625,16 +1651,6 @@
 			(type default)
 		)
 		(uuid "ffc5e80e-075b-42d7-aab7-3775a62ea10f")
-	)
-	(label ""
-		(at 137.16 59.69 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left bottom)
-		)
-		(uuid "e1c7202e-a3f0-416f-bb1a-37eb4ab9b295")
 	)
 	(hierarchical_label "SCL"
 		(shape bidirectional)
@@ -1668,6 +1684,84 @@
 			(justify right)
 		)
 		(uuid "dfeddd5e-c1ef-45b2-9f63-16c5226056fd")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 144.78 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "024d0f80-4b1f-49be-96f1-d22bce98652f")
+		(property "Reference" "#PWR081"
+			(at 144.78 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "769cfc62-0ae5-416f-be0a-63763962a9b2")
+		)
+		(instances
+			(project "main"
+				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/1365427d-9f63-40aa-86c4-95bccf98c7c3"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2061,6 +2155,85 @@
 			(project "main"
 				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/1365427d-9f63-40aa-86c4-95bccf98c7c3"
 					(reference "TP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 139.7 69.85 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "40dc5ccb-ee1a-4db6-ae0d-df9bce4ed409")
+		(property "Reference" "C31"
+			(at 139.7 65.278 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 139.7 67.056 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 139.7 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d6aeeb2-3f35-4760-85cd-09242ce0133c")
+		)
+		(pin "2"
+			(uuid "b5396c9f-1488-4e96-88fa-ac4b13ac576f")
+		)
+		(instances
+			(project "main"
+				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/1365427d-9f63-40aa-86c4-95bccf98c7c3"
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -2691,88 +2864,6 @@
 			(project "main"
 				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/1365427d-9f63-40aa-86c4-95bccf98c7c3"
 					(reference "C30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 134.62 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d88b95f0-12a9-4d4b-ab55-42e76a2e6a6b")
-		(property "Reference" "C31"
-			(at 137.16 67.3162 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10nF"
-			(at 137.16 69.8562 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.62 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 134.62 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "438b0868-3ed0-4bce-8bed-be72a47263d9")
-		)
-		(pin "2"
-			(uuid "7003d82c-b3e5-4954-8bca-6fc1c99c1045")
-		)
-		(instances
-			(project "main"
-				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/1365427d-9f63-40aa-86c4-95bccf98c7c3"
-					(reference "C31")
 					(unit 1)
 				)
 			)

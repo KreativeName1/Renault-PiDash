@@ -4,4 +4,6 @@
 	(lib (name "LMR38025SQDRRRQ1") (type "KiCad") (uri "${KIPRJMOD}/libraries/LMR38025SQDRRRQ1.kicad_sym") (options "") (descr "PSU symbol preserved from the schematic"))
 	(lib (name "RASPBERRY_PI_ZERO_2_W") (type "KiCad") (uri "${KIPRJMOD}/lib/RASPBERRY_PI_ZERO_2_W.kicad_sym") (options "") (descr ""))
 	(lib (name "GY_GPS6MV2") (type "KiCad") (uri "${KIPRJMOD}/lib/GY_GPS6MV2.kicad_sym") (options "") (descr ""))
+	(lib (name "ESD2CAN24-Q1") (type "KiCad") (uri "${KIPRJMOD}/lib/ESD2CAN24-Q1.kicad_sym") (options "") (descr ""))
+	(lib (name "TCAN3404-Q1") (type "KiCad") (uri "${KIPRJMOD}/lib/TCAN3404-Q1.kicad_sym") (options "") (descr ""))
 )

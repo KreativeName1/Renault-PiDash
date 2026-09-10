@@ -311,26 +311,24 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -25.42 39.3962 0)
+			(property "Reference" "U10"
+				(at 0 43.18 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "RASPBERRY_PI_ZERO_2_W"
-				(at -25.4191 -40.6687 0)
+				(at 0 40.64 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Footprint" "RASPBERRY_PI_ZERO_2_W:MODULE_RASPBERRY_PI_ZERO_2_W"
@@ -498,24 +496,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-				(pin power_in line
-					(at 30.48 30.48 180)
-					(length 5.08)
-					(name "3V3_1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
 					)
 				)
 				(pin power_in line
@@ -781,24 +761,6 @@
 						)
 					)
 					(number "16"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 30.48 27.94 180)
-					(length 5.08)
-					(name "3V3_17"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "17"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1221,6 +1183,44 @@
 					)
 				)
 			)
+			(symbol "RASPBERRY_PI_ZERO_2_W_1_0"
+				(pin power_out line
+					(at 30.48 30.48 180)
+					(length 5.08)
+					(name "3V3_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 30.48 27.94 180)
+					(length 5.08)
+					(name "3V3_17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
@@ -1382,12 +1382,6 @@
 		(uuid "7773b8d0-919c-405d-a052-770ad47a2314")
 	)
 	(junction
-		(at 114.3 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7d011a6f-339c-4eee-836b-11f0fd1b8def")
-	)
-	(junction
 		(at 193.04 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1423,9 +1417,43 @@
 		(color 0 0 0 0)
 		(uuid "e76dddd4-fafb-47b5-a696-efcdb06ea5fa")
 	)
+	(junction
+		(at 114.3 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8788d29-213f-4465-995a-5ff59ef311b9")
+	)
+	(no_connect
+		(at 180.34 92.71)
+		(uuid "0720e91f-3b7d-48ea-b3d6-64c9b9b308d6")
+	)
+	(no_connect
+		(at 119.38 85.09)
+		(uuid "0ddb9127-9b5d-43ad-8afa-06c507eada7f")
+	)
+	(no_connect
+		(at 180.34 102.87)
+		(uuid "14513b53-fbd4-423a-9743-7befe01b92dc")
+	)
+	(no_connect
+		(at 180.34 90.17)
+		(uuid "245543f1-568a-475a-8782-5f27ddfc9fc5")
+	)
+	(no_connect
+		(at 180.34 100.33)
+		(uuid "9547fd50-5c71-4675-a3ef-aa2586706820")
+	)
 	(no_connect
 		(at 180.34 67.31)
 		(uuid "b01b9447-8c7b-441a-918c-6e16e3ac4d46")
+	)
+	(no_connect
+		(at 119.38 107.95)
+		(uuid "dc01c044-1a33-407a-b6c7-b4e7957f932b")
+	)
+	(no_connect
+		(at 119.38 110.49)
+		(uuid "e17eb12c-6721-4563-9f12-f11d16fe2c38")
 	)
 	(wire
 		(pts
@@ -1456,6 +1484,16 @@
 			(type default)
 		)
 		(uuid "049c1803-ef0e-4f23-990e-ea6385784c78")
+	)
+	(wire
+		(pts
+			(xy 114.3 77.47) (xy 119.38 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "065673a3-16e6-40e9-b351-a282437294d5")
 	)
 	(wire
 		(pts
@@ -1569,13 +1607,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 60.96) (xy 114.3 49.53)
+			(xy 114.3 49.53) (xy 114.3 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2d24f41b-e65f-40a4-9c33-70e6069ddd1a")
+		(uuid "2f2bb800-7367-405f-a604-59c1ebbcf5d8")
 	)
 	(wire
 		(pts
@@ -1686,16 +1724,6 @@
 			(type default)
 		)
 		(uuid "7437ed0f-080d-4564-b53b-49f1b1401912")
-	)
-	(wire
-		(pts
-			(xy 114.3 66.04) (xy 114.3 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7579b750-f744-4860-b5f0-8d9c3777d83f")
 	)
 	(wire
 		(pts
@@ -1859,6 +1887,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 66.04) (xy 114.3 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aae3d9c1-cd57-45db-865d-b51a4d8c4857")
+	)
+	(wire
+		(pts
 			(xy 180.34 87.63) (xy 193.04 87.63)
 		)
 		(stroke
@@ -2006,16 +2044,6 @@
 			(type default)
 		)
 		(uuid "f2c0b3b6-1527-4ba4-be8c-76b2d8c06037")
-	)
-	(wire
-		(pts
-			(xy 114.3 77.47) (xy 119.38 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcd54000-96fe-41f1-8e46-5a9b778d2b4e")
 	)
 	(wire
 		(pts
@@ -2594,7 +2622,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 114.443 63.5 0)
+		(at 114.3 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2605,7 +2633,7 @@
 		(fields_autoplaced yes)
 		(uuid "75807afc-0fb7-4561-bc66-803cb1650053")
 		(property "Reference" "R41"
-			(at 116.983 62.2299 0)
+			(at 116.84 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2616,7 +2644,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 116.983 64.7699 0)
+			(at 116.84 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2627,7 +2655,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.443 63.5 0)
+			(at 114.3 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2638,7 +2666,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.443 63.5 0)
+			(at 114.3 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2649,7 +2677,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 114.443 63.5 0)
+			(at 114.3 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1,4 +1,7 @@
 (fp_lib_table
 	(version 7)
 	(lib (name "GY_GPS6MV2") (type "KiCad") (uri "${KIPRJMOD}/lib/GY_GPS6MV2.pretty") (options "") (descr ""))
+	(lib (name "RASPBERRY_PI_ZERO_2_W") (type "KiCad") (uri "${KIPRJMOD}/lib/RASPBERRY_PI_ZERO_2_W.pretty") (options "") (descr ""))
+	(lib (name "ESD2CAN24-Q1") (type "KiCad") (uri "${KIPRJMOD}/lib/ESD2CAN24-Q1.pretty") (options "") (descr ""))
+	(lib (name "TCAN3404-Q1") (type "KiCad") (uri "${KIPRJMOD}/lib/TCAN3404-Q1.pretty") (options "") (descr ""))
 )

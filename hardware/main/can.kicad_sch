@@ -3512,106 +3512,6 @@
 		)
 	)
 	(symbol
-		(lib_id "TCAN3404-Q1:PTCAN3404DDFRQ1")
-		(at 151.13 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b71cab0-38a0-4f64-aa21-6164efb57430")
-		(property "Reference" "U12"
-			(at 168.91 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "PTCAN3404DDFRQ1"
-			(at 168.91 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "DDF0008A-IPC_A"
-			(at 151.13 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/tcan3404-q1"
-			(at 151.13 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 151.13 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "818f131c-65a4-406e-bc6c-d5c278a1965b")
-		)
-		(pin "7"
-			(uuid "f60cfad2-c86c-425f-96bb-b2e82f55752f")
-		)
-		(pin "1"
-			(uuid "3ac27f52-2a6e-411e-80b9-f9367dd7d750")
-		)
-		(pin "2"
-			(uuid "f71ba386-80d4-435c-adcf-a07f5f1b827d")
-		)
-		(pin "3"
-			(uuid "de1d76a0-07c7-47a1-806c-377d2f4e3beb")
-		)
-		(pin "4"
-			(uuid "9116a4c5-42d2-42ca-9fe9-1268c17fa96f")
-		)
-		(pin "6"
-			(uuid "7e3bbc47-b061-43bc-b59b-db10a49104a1")
-		)
-		(pin "8"
-			(uuid "ef87247a-0994-4d80-8407-0b2443873046")
-		)
-		(instances
-			(project "main"
-				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/9ae84d67-064b-4531-bc2c-ef16eda37330"
-					(reference "U12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 135.89 97.79 0)
 		(unit 1)
@@ -3846,6 +3746,106 @@
 		)
 	)
 	(symbol
+		(lib_id "TCAN3404-Q1:PTCAN3404DDFRQ1")
+		(at 151.13 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8eb61d75-b40c-4443-bcb5-b85d3760015b")
+		(property "Reference" "U16"
+			(at 168.91 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "PTCAN3404DDFRQ1"
+			(at 168.91 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "TCAN3404-Q1:DDF0008A-IPC_A"
+			(at 151.13 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tcan3404-q1"
+			(at 151.13 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 151.13 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "25556740-8276-4a57-bdf1-05cfd2598e03")
+		)
+		(pin "2"
+			(uuid "353c4acb-dabb-41cc-968d-5c602ab70985")
+		)
+		(pin "8"
+			(uuid "91ff48c9-176d-46b7-9126-b9f9a90af42d")
+		)
+		(pin "5"
+			(uuid "7ab0864c-4929-4291-859a-5845fc41131c")
+		)
+		(pin "1"
+			(uuid "d8f78dde-405d-4923-9619-aa9529df7382")
+		)
+		(pin "4"
+			(uuid "0330583e-e0c6-40c2-8d15-5d7a3600147e")
+		)
+		(pin "7"
+			(uuid "e2b2a72c-e4b5-4d1a-b76b-89e9ec6c2b74")
+		)
+		(pin "3"
+			(uuid "058b5ddd-6c0f-4076-b170-e614b0f2c999")
+		)
+		(instances
+			(project "main"
+				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/9ae84d67-064b-4531-bc2c-ef16eda37330"
+					(reference "U16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ESD2CAN24-Q1:PESD2CAN24DBZRQ1")
 		(at 199.39 95.25 0)
 		(unit 1)
@@ -3877,7 +3877,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT-23_DBZ_TEX"
+		(property "Footprint" "ESD2CAN24-Q1:SOT-23_DBZ_TEX"
 			(at 199.39 95.25 0)
 			(hide yes)
 			(show_name no)

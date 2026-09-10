@@ -648,7 +648,7 @@
         "uuid": "3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5"
       }
     ],
-    "used_designators": "U15,#PWR79-80,J7-8",
+    "used_designators": "#FLG1-7,NT1,U16,C31,#PWR81",
     "variants": []
   },
   "sheets": [
@@ -690,7 +690,7 @@
     ],
     [
       "9ae84d67-064b-4531-bc2c-ef16eda37330",
-      "CAM"
+      "CAN"
     ],
     [
       "ee36f53e-7e46-42e8-9379-443494bbfe13",

@@ -462,6 +462,148 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:NetTie_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Small"
 			(pin_numbers
 				(hide yes)
@@ -1465,6 +1607,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 190.5 88.9)
@@ -1495,6 +1752,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1f0731e0-c503-4372-b5de-b17af6cda49e")
+	)
+	(junction
+		(at 163.83 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20d99da4-5850-4683-8656-d08d70403194")
 	)
 	(junction
 		(at 189.23 58.42)
@@ -1545,6 +1808,12 @@
 		(uuid "47f863b5-11a0-46ee-8433-59f24e0e3e38")
 	)
 	(junction
+		(at 168.91 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b77c3f4-2a44-4b9d-adf8-1d458744a3c7")
+	)
+	(junction
 		(at 168.91 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1581,12 +1850,6 @@
 		(uuid "6c8372e3-a1c5-40a6-9fbd-d429448e99a4")
 	)
 	(junction
-		(at 168.91 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7ecc0a35-067b-408d-a5c3-ea865cc4f7b0")
-	)
-	(junction
 		(at 115.57 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1597,12 +1860,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87c977fd-75f6-4cf0-b4dd-37b9ecc352a2")
-	)
-	(junction
-		(at 163.83 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "939345ad-7361-4415-87d9-3e2561035a04")
 	)
 	(junction
 		(at 106.68 87.63)
@@ -1621,6 +1878,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9e13ab2b-f481-484b-a832-15f19f9ce747")
+	)
+	(junction
+		(at 157.48 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae5f15b7-5c6f-497b-8b68-d8457781a719")
 	)
 	(junction
 		(at 200.66 88.9)
@@ -1681,6 +1944,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f3f5cb9f-188c-4b8c-9b80-f7600068907c")
+	)
+	(no_connect
+		(at 119.38 107.95)
+		(uuid "2dba2ad1-9f43-4b92-b404-673b5ccdc564")
 	)
 	(wire
 		(pts
@@ -1884,7 +2151,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 132.08) (xy 163.83 132.08)
+			(xy 119.38 132.08) (xy 157.48 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2074,16 +2341,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 132.08) (xy 168.91 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c26dadf-f947-498b-975b-62db25a4620b")
-	)
-	(wire
-		(pts
 			(xy 110.49 115.57) (xy 110.49 95.25)
 		)
 		(stroke
@@ -2194,13 +2451,13 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 93.98) (xy 213.36 93.98)
+			(xy 157.48 132.08) (xy 163.83 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d3f4c47-d318-458a-a31e-86bcfb9fe7ea")
+		(uuid "701034e6-6684-4278-ad2c-f6665d61a9ee")
 	)
 	(wire
 		(pts
@@ -2521,6 +2778,16 @@
 			(type default)
 		)
 		(uuid "b11cb922-1f85-4ace-b1d1-16b885da0a4e")
+	)
+	(wire
+		(pts
+			(xy 204.47 93.98) (xy 213.36 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14aeb11-dcf7-4018-b228-4e8039b3bf64")
 	)
 	(wire
 		(pts
@@ -2949,6 +3216,85 @@
 			(project "main"
 				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/b60627e7-4f8f-4feb-bf39-03b594544918/a703ac61-9739-4491-84cb-879e38f4dcae"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 157.48 132.08 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0b42afa6-01e2-491f-abea-f4d2fe9590ce")
+		(property "Reference" "#FLG03"
+			(at 157.48 133.985 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 157.48 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 157.48 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92ee6c1b-366c-4e68-867f-b98e1e06365e")
+		)
+		(instances
+			(project "main"
+				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/b60627e7-4f8f-4feb-bf39-03b594544918/a703ac61-9739-4491-84cb-879e38f4dcae"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -3656,6 +4002,86 @@
 			(project "main"
 				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/b60627e7-4f8f-4feb-bf39-03b594544918/a703ac61-9739-4491-84cb-879e38f4dcae"
 					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 166.37 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "32a09d02-91c9-4672-9416-6025a1158056")
+		(property "Reference" "NT1"
+			(at 166.37 130.048 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 166.37 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 166.37 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f82bd97f-a161-479f-a15c-516f23bf2777")
+		)
+		(pin "1"
+			(uuid "3c778b20-f432-4944-a272-a3e9b7b381ff")
+		)
+		(instances
+			(project "main"
+				(path "/3c4b33ec-0bb0-4c39-b9f2-8186a131a3d5/b60627e7-4f8f-4feb-bf39-03b594544918/a703ac61-9739-4491-84cb-879e38f4dcae"
+					(reference "NT1")
 					(unit 1)
 				)
 			)
