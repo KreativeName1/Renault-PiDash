@@ -2001,106 +2001,6 @@
 		(uuid "f8e2c6ab-0e0f-4d94-9746-d943367db18f")
 	)
 	(symbol
-		(lib_id "TCAN3404-Q1:PTCAN3404DDFRQ1")
-		(at 123.19 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "12bebba2-a1dd-4e9d-a221-de1fb26bd14f")
-		(property "Reference" "U3"
-			(at 140.97 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "PTCAN3404DDFRQ1"
-			(at 140.97 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "DDF0008A-IPC_A"
-			(at 123.19 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/tcan3404-q1"
-			(at 123.19 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 123.19 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "5b6a1950-33fe-44f5-92ef-bafce3fe1dc2")
-		)
-		(pin "7"
-			(uuid "7e0b374e-8169-4ec3-9d88-88f91428f625")
-		)
-		(pin "1"
-			(uuid "bd2e0a23-97ab-43ba-ba81-4bfc4ec575e3")
-		)
-		(pin "2"
-			(uuid "e96daf33-7425-4bd7-82fd-2797b23778b2")
-		)
-		(pin "3"
-			(uuid "1762cedb-9a87-4b26-8a20-17b3e02f11b7")
-		)
-		(pin "4"
-			(uuid "828cf77b-9ba4-4d27-8161-68f65c4bc9f3")
-		)
-		(pin "6"
-			(uuid "3f8fa15b-0def-4650-90ba-30abd44b89d1")
-		)
-		(pin "8"
-			(uuid "c4075a03-e524-4da7-b680-03ff58d529a9")
-		)
-		(instances
-			(project "xr25"
-				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 114.3 82.55 0)
 		(mirror x)
@@ -2173,91 +2073,6 @@
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ESD2CAN24-Q1:PESD2CAN24DBZRQ1")
-		(at 171.45 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "500fcedb-7105-439f-869f-968bcdb93e2c")
-		(property "Reference" "CR1"
-			(at 182.88 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "PESD2CAN24DBZRQ1"
-			(at 182.88 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "SOT-23_DBZ_TEX"
-			(at 171.45 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "PESD2CAN24DBZRQ1"
-			(at 171.45 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 171.45 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6667787f-c4f7-4ab7-bd60-86c54fe0ef60")
-		)
-		(pin "3"
-			(uuid "4398880a-8a5f-42c0-a067-0d841556ca08")
-		)
-		(pin "2"
-			(uuid "2e45d80b-b61f-44eb-b583-4e13b921da19")
-		)
-		(instances
-			(project "xr25"
-				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "CR1")
 					(unit 1)
 				)
 			)
@@ -2581,6 +2396,106 @@
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TCAN3404-Q1:PTCAN3404DDFRQ1")
+		(at 123.19 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78f13cad-9b54-4b74-924f-7104269d6b6e")
+		(property "Reference" "U3"
+			(at 140.97 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "PTCAN3404DDFRQ1"
+			(at 140.97 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "TCAN3404-Q1:DDF0008A-IPC_A"
+			(at 123.19 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tcan3404-q1"
+			(at 123.19 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "64b9ee5d-d3e4-4cfe-8e12-f8d3321fb985")
+		)
+		(pin "2"
+			(uuid "fb5260cf-10db-4138-a698-e33c94931d44")
+		)
+		(pin "1"
+			(uuid "7990a137-1a82-4ad1-8421-414fb55ec175")
+		)
+		(pin "3"
+			(uuid "2ad7cf4b-b227-4f7a-8f6f-74fdbec9c8e9")
+		)
+		(pin "6"
+			(uuid "92392cf1-85bd-4911-a1e3-5fb3df3d0492")
+		)
+		(pin "5"
+			(uuid "ded22728-5808-4b1e-b4a6-89ecb586dc2e")
+		)
+		(pin "7"
+			(uuid "3f15de59-56af-4bcb-b021-bf5f001fe4af")
+		)
+		(pin "8"
+			(uuid "c7f5a132-0dff-46bd-93ba-933e0e8fbc2d")
+		)
+		(instances
+			(project "xr25"
+				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -2992,6 +2907,91 @@
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ESD2CAN24-Q1:PESD2CAN24DBZRQ1")
+		(at 171.45 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f7103f16-8688-4bed-86e8-76ab631a63f5")
+		(property "Reference" "CR1"
+			(at 182.88 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "PESD2CAN24DBZRQ1"
+			(at 182.88 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "ESD2CAN24-Q1:SOT-23_DBZ_TEX"
+			(at 171.45 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "PESD2CAN24DBZRQ1"
+			(at 171.45 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 171.45 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1be7b817-63b2-4ab3-84e6-03c3fe40848a")
+		)
+		(pin "1"
+			(uuid "cf59a2e8-d5d3-4d7a-a13c-ab555e453b08")
+		)
+		(pin "3"
+			(uuid "97f7fe82-c236-4bf6-93f7-8a16b424e166")
+		)
+		(instances
+			(project "xr25"
+				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
+					(reference "CR1")
 					(unit 1)
 				)
 			)

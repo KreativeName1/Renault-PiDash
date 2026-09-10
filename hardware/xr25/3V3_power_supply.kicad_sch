@@ -694,8 +694,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 2.54 0)
+			(property "Reference" "U2"
+				(at 0 25.4 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -705,7 +705,7 @@
 				)
 			)
 			(property "Value" "LMR36015AQRNXRQ1"
-				(at 0 0 0)
+				(at 0 22.86 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -714,7 +714,7 @@
 					)
 				)
 			)
-			(property "Footprint" "RNX0012B"
+			(property "Footprint" "LMR36015AQRNXRQ1:RNX0012B"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -866,60 +866,6 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 20.32 5.08 180)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 20.32 15.24 180)
-					(length 5.08)
-					(name "BST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -20.32 -5.08 0)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 20.32 -15.24 180)
 					(length 5.08)
@@ -1028,7 +974,63 @@
 						)
 					)
 				)
-				(pin power_in line
+			)
+			(symbol "LMR36015AQRNXRQ1_1_1"
+				(pin passive line
+					(at 20.32 5.08 180)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 15.24 180)
+					(length 5.08)
+					(name "BST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -20.32 -5.08 0)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
 					(at 20.32 7.62 180)
 					(length 5.08)
 					(name "SW"
@@ -1164,18 +1166,133 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 227.33 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10e871e9-14e6-4071-aa77-c1ae3f231a27")
 	)
 	(junction
 		(at 200.66 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1441937b-b7ae-4445-ad4d-3c65d4d3201b")
-	)
-	(junction
-		(at 168.91 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "151be662-b51f-4fa7-9f65-d8f9428850f7")
 	)
 	(junction
 		(at 97.79 76.2)
@@ -1256,6 +1373,12 @@
 		(uuid "a9e01cee-0bce-46b6-9a72-839a04c71adc")
 	)
 	(junction
+		(at 168.91 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf1fb8e1-1646-4413-b777-813b569fd4dd")
+	)
+	(junction
 		(at 217.17 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1295,6 +1418,26 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 83.82) (xy 227.33 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a734fd0-9590-46fa-9879-8fbb1ae99388")
+	)
+	(wire
+		(pts
+			(xy 227.33 83.82) (xy 229.87 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0de9eab9-bede-4ecc-b225-09a2a1db76f5")
+	)
+	(wire
+		(pts
 			(xy 223.52 86.36) (xy 223.52 83.82)
 		)
 		(stroke
@@ -1302,16 +1445,6 @@
 			(type default)
 		)
 		(uuid "0e952014-bbd0-4d1b-9295-3b485c76a00f")
-	)
-	(wire
-		(pts
-			(xy 223.52 83.82) (xy 229.87 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fd4b864-a6ca-4e50-9aa3-4658ba38a77b")
 	)
 	(wire
 		(pts
@@ -2078,6 +2211,118 @@
 		)
 	)
 	(symbol
+		(lib_id "LMR36015AQRNXRQ1:LMR36015AQRNXRQ1")
+		(at 148.59 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a1fd35a-ebf1-47cb-92d5-6de81d6cd23c")
+		(property "Reference" "U2"
+			(at 148.59 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "LMR36015AQRNXRQ1"
+			(at 148.59 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "LMR36015AQRNXRQ1:RNX0012B"
+			(at 148.59 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/lmr36015-q1"
+			(at 148.59 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 148.59 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "7a1cdf38-7aed-4769-881a-39edc0a88703")
+		)
+		(pin "9"
+			(uuid "32c84444-7782-40fe-8740-c22b033e1b0e")
+		)
+		(pin "2"
+			(uuid "2d0c2074-3cbb-4c5f-8b67-3bff7018fd91")
+		)
+		(pin "10"
+			(uuid "9dfac69f-69cb-491e-a4f2-4fa9e02397d4")
+		)
+		(pin "4"
+			(uuid "c3e0bb92-1f07-4f35-9d02-7b35ab88af1b")
+		)
+		(pin "7"
+			(uuid "0788564a-19fd-43cb-a019-baa4f714ecbe")
+		)
+		(pin "12"
+			(uuid "6a3d3140-8216-4683-ba0a-b7201fc22260")
+		)
+		(pin "3"
+			(uuid "25bc4559-f348-4cdf-b835-5bae410941c9")
+		)
+		(pin "1"
+			(uuid "35bc6b17-5d03-4bb6-acc3-7d993fbbd5be")
+		)
+		(pin "11"
+			(uuid "5578b998-240e-4df6-a857-3bc7b1600116")
+		)
+		(pin "8"
+			(uuid "6bf93869-2859-490c-8592-adb08412614b")
+		)
+		(pin "6"
+			(uuid "e1e68df0-3bb2-465a-b651-b72ce4a2cad6")
+		)
+		(instances
+			(project "xr25"
+				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/646e837e-3db1-4305-b6ca-1f0b46325de9"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 172.72 73.66 0)
 		(unit 1)
@@ -2735,6 +2980,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 227.33 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbeff633-6c68-4727-9cba-4b1e46d17411")
+		(property "Reference" "#FLG03"
+			(at 227.33 81.915 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 227.33 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 227.33 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "794ce4b7-5d96-4bc2-8059-321750d92c4d")
+		)
+		(instances
+			(project "xr25"
+				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/646e837e-3db1-4305-b6ca-1f0b46325de9"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 223.52 76.2 0)
 		(unit 1)
@@ -2971,118 +3295,6 @@
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/646e837e-3db1-4305-b6ca-1f0b46325de9"
 					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LMR36015AQRNXRQ1:LMR36015AQRNXRQ1")
-		(at 148.59 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ebef15dd-f548-4d5c-8d78-af37f68949c7")
-		(property "Reference" "U2"
-			(at 148.59 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "LMR36015AQRNXRQ1"
-			(at 148.59 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "RNX0012B"
-			(at 148.59 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/lmr36015-q1"
-			(at 148.59 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 148.59 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "32928e2d-de29-4eff-8d7f-f6ab370179da")
-		)
-		(pin "2"
-			(uuid "d8d94f37-b5f3-4cbc-bbbf-f5e55ef76ea4")
-		)
-		(pin "3"
-			(uuid "c570f932-9d13-43e1-980d-72c274121671")
-		)
-		(pin "4"
-			(uuid "619a8787-05ea-4915-9550-40d014b32ff3")
-		)
-		(pin "6"
-			(uuid "715b06b9-4716-4116-8e35-f6c692248487")
-		)
-		(pin "12"
-			(uuid "5c91ed37-51e6-4451-8fb9-26ece8a12f4b")
-		)
-		(pin "5"
-			(uuid "1994001f-7ea1-4d10-abc6-83daa2a37737")
-		)
-		(pin "10"
-			(uuid "a6d9166b-f228-4aad-b7ab-ae9475f93168")
-		)
-		(pin "8"
-			(uuid "5832ca6d-986b-4cdd-ba98-4059c7d5709b")
-		)
-		(pin "7"
-			(uuid "e2aa654f-a744-444a-80cf-6a542d5c3d21")
-		)
-		(pin "9"
-			(uuid "9d8e307b-f19f-4f54-ab47-5390d7a3ae35")
-		)
-		(pin "11"
-			(uuid "a6d6264d-2a8d-43a3-8028-f2de223f73e9")
-		)
-		(instances
-			(project "xr25"
-				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/646e837e-3db1-4305-b6ca-1f0b46325de9"
-					(reference "U2")
 					(unit 1)
 				)
 			)
