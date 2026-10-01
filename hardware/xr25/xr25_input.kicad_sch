@@ -538,20 +538,18 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:PNP"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Transistor_BJT:Q_PNP_BEC"
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q1"
-				(at 5.08 1.2701 0)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -561,8 +559,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BC857B-Q"
-				(at 5.08 -1.2699 0)
+			(property "Value" "Q_PNP_BEC"
+				(at 5.08 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -573,7 +571,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 35.56 0 0)
+				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -583,8 +581,8 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-				(at 35.56 0 0)
+			(property "Datasheet" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -594,7 +592,7 @@
 					)
 				)
 			)
-			(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(property "Description" "PNP transistor, base/emitter/collector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -616,7 +614,7 @@
 					)
 				)
 			)
-			(property "Sim.Type" "GUMMELPOON"
+			(property "Sim.Pins" "1=B 2=E 3=C"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -627,7 +625,7 @@
 					)
 				)
 			)
-			(property "Sim.Pins" "1=C 2=B 3=E"
+			(property "ki_keywords" "BJT"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -638,24 +636,13 @@
 					)
 				)
 			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PNP_0_1"
+			(symbol "Q_PNP_BEC_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
 					)
 					(stroke
-						(width 0.1524)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -664,7 +651,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+						(xy 0.635 1.905) (xy 0.635 -1.905)
 					)
 					(stroke
 						(width 0.508)
@@ -688,7 +675,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -711,7 +698,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778) (xy 2.286 -1.778)
+						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -722,11 +709,11 @@
 					)
 				)
 			)
-			(symbol "PNP_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
+			(symbol "Q_PNP_BEC_1_1"
+				(pin input line
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "C"
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -741,10 +728,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
+				(pin passive line
+					(at 2.54 -5.08 90)
 					(length 2.54)
-					(name "B"
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -760,9 +747,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "E"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -918,7 +905,7 @@
 		(at 144.78 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c88dfc30-2889-43dd-9c40-9a439e84d483")
+		(uuid "dbe8c766-99d1-474d-97f6-2276a2be968a")
 	)
 	(junction
 		(at 139.7 111.76)
@@ -1228,7 +1215,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "422f2190-33b3-4190-8cef-3fb85cf48eb6")
-		(property "Reference" "R10"
+		(property "Reference" "R13"
 			(at 155.194 85.344 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1250,7 +1237,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 153.67 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1283,6 +1270,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C23151"
+			(at 153.67 88.9 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a0ff978d-eb79-4922-8f37-58ccb7538b7b")
 		)
@@ -1292,7 +1290,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/7f5fd8b2-49e5-4814-9736-a3e8ffd4fdec"
-					(reference "R10")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -1309,7 +1307,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "49ac9990-701d-49c4-8f80-ecbbc00ae621")
-		(property "Reference" "R8"
+		(property "Reference" "R12"
 			(at 146.558 80.264 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1331,7 +1329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 144.78 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1364,6 +1362,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C23151"
+			(at 144.78 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4c13dd2c-840c-457f-b7f0-e43e87ecc10e")
 		)
@@ -1373,7 +1382,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/7f5fd8b2-49e5-4814-9736-a3e8ffd4fdec"
-					(reference "R8")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -1391,7 +1400,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9a290450-d5b1-4445-aff7-6fb7f44306ed")
-		(property "Reference" "D6"
+		(property "Reference" "D5"
 			(at 146.05 101.9176 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1413,7 +1422,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "lcsc_footprints:C2287_LED0603-R-RD"
 			(at 143.51 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -1457,6 +1466,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C2287"
+			(at 143.51 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dee57a40-7d60-45e4-b91d-0a015ce8411d")
 		)
@@ -1466,7 +1486,124 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/7f5fd8b2-49e5-4814-9736-a3e8ffd4fdec"
-					(reference "D6")
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:Q_PNP_BEC")
+		(at 139.7 88.9 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9faa0d33-e613-4d58-ae37-a618e500b2ae")
+		(property "Reference" "Q1"
+			(at 134.62 90.1701 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC857B-Q"
+			(at 134.62 87.6301 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 134.62 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PNP transistor, base/emitter/collector"
+			(at 139.7 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 139.7 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=B 2=E 3=C"
+			(at 139.7 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C5121591"
+			(at 139.7 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ef0f1336-b63e-411d-906a-74664d485866")
+		)
+		(pin "2"
+			(uuid "8ef51eff-c675-44c2-bdbf-ec964dd9ed2f")
+		)
+		(pin "3"
+			(uuid "66d2c7e6-38b8-4811-b7ae-93dbddafee69")
+		)
+		(instances
+			(project "xr25"
+				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/7f5fd8b2-49e5-4814-9736-a3e8ffd4fdec"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -1483,7 +1620,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "addc3820-c142-4514-87f8-972de42bd908")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 145.288 104.394 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1505,7 +1642,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 143.51 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -1538,6 +1675,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C4190"
+			(at 143.51 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "bfab0261-8a0d-4ebe-8378-bd1646e247c4")
 		)
@@ -1547,7 +1695,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/7f5fd8b2-49e5-4814-9736-a3e8ffd4fdec"
-					(reference "R9")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -1565,7 +1713,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b6782e04-5a01-44d3-8c68-043ba9f7d94e")
-		(property "Reference" "D5"
+		(property "Reference" "D6"
 			(at 163.83 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1575,7 +1723,7 @@
 				)
 			)
 		)
-		(property "Value" "BAS16-Q"
+		(property "Value" "1N4148W"
 			(at 163.83 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1585,7 +1733,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "lcsc_footprints:C84367_SOD-123_L2_8-W1_8-LS3_7-RD"
 			(at 163.83 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -1640,6 +1788,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C84367"
+			(at 163.83 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6d0dd66d-8a0f-4f0d-8dff-48ba3bbe444f")
 		)
@@ -1649,124 +1808,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/7f5fd8b2-49e5-4814-9736-a3e8ffd4fdec"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:PNP")
-		(at 139.7 88.9 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b7d5fb55-2933-4c18-8897-af9277423a0c")
-		(property "Reference" "Q1"
-			(at 134.62 90.1701 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC857B-Q"
-			(at 134.62 87.6301 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 104.14 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
-			(at 139.7 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "PNP"
-			(at 139.7 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "GUMMELPOON"
-			(at 139.7 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 139.7 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f4eb2b6b-c646-49db-b807-d53f3d8dd3cb")
-		)
-		(pin "1"
-			(uuid "9349c752-eced-4b6d-a607-390d46d0e2e2")
-		)
-		(pin "3"
-			(uuid "ae0dc547-bce1-4f79-af0f-d27e301f5e29")
-		)
-		(instances
-			(project "xr25"
-				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/7f5fd8b2-49e5-4814-9736-a3e8ffd4fdec"
-					(reference "Q1")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -1783,7 +1825,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ce4ee916-0044-4755-8570-ba743b82e25a")
-		(property "Reference" "R11"
+		(property "Reference" "R10"
 			(at 133.858 106.934 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1805,7 +1847,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 132.08 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -1838,6 +1880,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 132.08 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "498dd0f1-6bbc-48d5-8f9b-8cc0f3c1e844")
 		)
@@ -1847,7 +1900,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/7f5fd8b2-49e5-4814-9736-a3e8ffd4fdec"
-					(reference "R11")
+					(reference "R10")
 					(unit 1)
 				)
 			)

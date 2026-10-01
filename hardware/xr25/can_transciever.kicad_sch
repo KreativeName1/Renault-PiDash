@@ -732,8 +732,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "CR"
-				(at 12.7 7.62 0)
+			(property "Reference" "CR1"
+				(at 11.43 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -743,7 +743,7 @@
 				)
 			)
 			(property "Value" "PESD2CAN24DBZRQ1"
-				(at 12.7 5.08 0)
+				(at 11.43 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1191,7 +1191,9 @@
 						)
 					)
 				)
-				(pin power_out line
+			)
+			(symbol "PESD2CAN24DBZRQ1_1_1"
+				(pin passive line
 					(at 22.86 0 180)
 					(length 7.62)
 					(name "3"
@@ -2012,7 +2014,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3eb79592-541d-4473-a83b-a2717fb4d0bc")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR015"
 			(at 114.3 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2072,7 +2074,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "#PWR012")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -2089,7 +2091,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ee0549b-1dce-4fbc-bdbe-749a825cbfef")
-		(property "Reference" "R7"
+		(property "Reference" "R9"
 			(at 109.474 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2111,7 +2113,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 107.95 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -2144,6 +2146,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C4190"
+			(at 107.95 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5714f7f5-eeee-4f51-bc61-bc7aebfe65df")
 		)
@@ -2153,7 +2166,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "R7")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -2171,7 +2184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f26d933-10a6-4741-86c1-c504849b8207")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 210.82 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2181,7 +2194,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x02_Odd_Even"
+		(property "Value" "CAN_CONNECTOR"
 			(at 210.82 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2191,7 +2204,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "lcsc_footprints:C505218_CONN-SMD_430450406"
 			(at 209.55 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -2239,7 +2252,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -2257,7 +2270,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74c457ca-9561-43e5-b9b5-de104840ae96")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR018"
 			(at 217.17 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -2317,7 +2330,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "#PWR017")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -2335,7 +2348,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75cc756a-4011-4f09-800d-5d33f36df563")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR016"
 			(at 158.75 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -2395,7 +2408,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "#PWR015")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -2423,7 +2436,7 @@
 				)
 			)
 		)
-		(property "Value" "PTCAN3404DDFRQ1"
+		(property "Value" "TCAN3404DDFRQ1"
 			(at 140.97 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2458,6 +2471,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 123.19 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C32428067"
 			(at 123.19 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2534,7 +2558,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "lcsc_footprints:C125098_LED0603-RD"
 			(at 107.95 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -2578,6 +2602,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C125098"
+			(at 107.95 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c2fae815-2d8a-4b8a-a68f-fe4acd51fdbb")
 		)
@@ -2605,7 +2640,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a99e44fa-f007-4d05-90fa-b42b495128c8")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR017"
 			(at 194.31 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2665,7 +2700,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "#PWR016")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -2682,7 +2717,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad9dea91-9614-4c4f-a499-d71bc258ac90")
-		(property "Reference" "R6"
+		(property "Reference" "R8"
 			(at 109.474 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2704,7 +2739,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 107.95 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -2737,6 +2772,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 107.95 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ce75f912-9303-4b7b-81a9-abd8410df414")
 		)
@@ -2746,7 +2792,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "R6")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -2786,7 +2832,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 114.3 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -2819,6 +2865,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C14663"
+			(at 114.3 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2c5d3a54-665b-4b1c-ad09-31b30b1c465a")
 		)
@@ -2829,6 +2886,102 @@
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ESD2CAN24-Q1:PESD2CAN24DBZRQ1")
+		(at 171.45 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0ba3fc6-b694-4dd7-a177-8a21482b7887")
+		(property "Reference" "CR1"
+			(at 182.88 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "ESD2CAN24DBZRQ1"
+			(at 182.88 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "ESD2CAN24-Q1:SOT-23_DBZ_TEX"
+			(at 171.45 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "ESD2CAN24DBZRQ1"
+			(at 171.45 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 171.45 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C5736151"
+			(at 171.45 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bfccc72f-f5f1-4846-99e2-5613dbc59b6a")
+		)
+		(pin "2"
+			(uuid "b778f913-d9d4-4178-975c-24db76451e8e")
+		)
+		(pin "3"
+			(uuid "3977c99f-2780-4492-9ee7-2a8023bba6fc")
+		)
+		(instances
+			(project "xr25"
+				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
+					(reference "CR1")
 					(unit 1)
 				)
 			)
@@ -2846,7 +2999,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8324f7e-739e-4c0c-a8d4-fb0ad41cae22")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR014"
 			(at 107.95 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -2906,92 +3059,7 @@
 		(instances
 			(project "xr25"
 				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ESD2CAN24-Q1:PESD2CAN24DBZRQ1")
-		(at 171.45 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f7103f16-8688-4bed-86e8-76ab631a63f5")
-		(property "Reference" "CR1"
-			(at 182.88 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "PESD2CAN24DBZRQ1"
-			(at 182.88 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "ESD2CAN24-Q1:SOT-23_DBZ_TEX"
-			(at 171.45 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "PESD2CAN24DBZRQ1"
-			(at 171.45 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 171.45 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "1be7b817-63b2-4ab3-84e6-03c3fe40848a")
-		)
-		(pin "1"
-			(uuid "cf59a2e8-d5d3-4d7a-a13c-ab555e453b08")
-		)
-		(pin "3"
-			(uuid "97f7fe82-c236-4bf6-93f7-8a16b424e166")
-		)
-		(instances
-			(project "xr25"
-				(path "/857fcb83-ed52-4e01-bdd2-c0a4a3a1ca9a/51a7677b-fe14-4c7b-8a2c-af81d60c51a0"
-					(reference "CR1")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)

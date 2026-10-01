@@ -3,4 +3,6 @@
 	(lib (name "ESD2CAN24-Q1") (type "KiCad") (uri "${KIPRJMOD}/lib/ESD2CAN24-Q1.kicad_sym") (options "") (descr ""))
 	(lib (name "LMR36015AQRNXRQ1") (type "KiCad") (uri "${KIPRJMOD}/lib/LMR36015AQRNXRQ1.kicad_sym") (options "") (descr ""))
 	(lib (name "TCAN3404-Q1") (type "KiCad") (uri "${KIPRJMOD}/lib/TCAN3404-Q1.kicad_sym") (options "") (descr ""))
+
+  (lib (name "lcsc_imported")(type "KiCad")(uri "${KIPRJMOD}/libs/lcsc/symbols/lcsc_imported.kicad_sym")(options "")(descr "LCSC imported components"))
 )

@@ -3,4 +3,6 @@
 	(lib (name "TCAN3404-Q1") (type "KiCad") (uri "${KIPRJMOD}/lib/TCAN3404-Q1.pretty") (options "") (descr ""))
 	(lib (name "LMR36015AQRNXRQ1") (type "KiCad") (uri "${KIPRJMOD}/lib/LMR36015AQRNXRQ1.pretty") (options "") (descr ""))
 	(lib (name "ESD2CAN24-Q1") (type "KiCad") (uri "${KIPRJMOD}/lib/ESD2CAN24-Q1.pretty") (options "") (descr ""))
+
+  (lib (name "lcsc_footprints")(type "KiCad")(uri "${KIPRJMOD}/libs/lcsc/footprints.pretty")(options "")(descr "LCSC imported footprints"))
 )
